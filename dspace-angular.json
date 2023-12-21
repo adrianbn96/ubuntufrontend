@@ -1,0 +1,11 @@
+{
+    "apps": [
+        {
+           "name": "dspace-angular",
+           "cwd": "/home/usercris/dspace-angular-dspace-cris-2023.01.00",
+           "script": "yarn",
+           "args": "run serve:ssr",
+           "interpreter": "none"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+<div class="background-image-container">
+  <div class="container">
+    <div class="jumbotron jumbotron-fluid">
+      <ds-themed-text-section *ngIf="hasHomeNewsMetadata; else dsDefaultHomeNews" [sectionId]="'site'"
+        [textRowSection]="homeNewsSection" [site]="(site$ | async)"></ds-themed-text-section>
+    </div>
+  </div>
+  <picture class="background-image">
+
+    <img alt=""
+      [src]="'assets/dspace/images/recursosunicauca/fietlogos.png'" /><!-- without the []="''" Firefox downloads both the fallback and the resolved image -->
+  </picture>
+  <small class="credits">Photo by <a href="https://www.pexels.com/@inspiredimages">@inspiredimages</a></small>
+</div>
+
+<ng-template #dsDefaultHomeNews>
+  <div class="d-flex flex-wrap">
+    <div>
+      <h1 class="display-3">INVESTUNICAUCA</h1>
+    </div>
+  </div>
+  <br>
+  <p>INVESTUNICAUCA es un repositorio de datos de investigación para la publicación de conjuntos de datos vinculado a
+    elementos de los actuales sistemas de información de investigación (CRIS - Current Research Information System) para
+    la gestión de grupos de investigación de la Universidad del Cauca.
+  </p>
+  <p>
+    Esta plataforma brinda servicios para gestionar y preservar materiales digitales, como documentos, imágenes y
+    conjuntos de datos, se centra específicamente en las necesidades de la institucion académica que desean gestionar y
+    mostrar sus actividades de investigación y producción académica.
+  </p>
+  <div class="espaciado-home">
+
+  </div>
+
+
+
+</ng-template>

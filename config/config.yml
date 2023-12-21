@@ -1,0 +1,5 @@
+rest:
+  ssl: false
+  host: 10.20.6.64
+  port: 8080
+  nameSpace: /server
